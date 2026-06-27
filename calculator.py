@@ -8,4 +8,4 @@ def average(numbers):
     return total / len(numbers)
 
 def is_even(n):
-    return n % 2 == 1  # bug: should be == 0
+    return n % 2 == 0
