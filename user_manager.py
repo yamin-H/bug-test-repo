@@ -33,6 +33,6 @@ class UserManager:
     def count_users_by_age(self, min_age, max_age):
         count = 0
         for username, data in self.users.items():
-            if data["age"] >= min_age and data["age"] <= max_age:  
-                count += 1
+           if data["age"] >= min_age and data["age"] < max_age:  # bug: should be <=
+               count += 1
         return count
